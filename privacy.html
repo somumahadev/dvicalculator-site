@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DviCalculator Privacy Policy</title>
+<meta name="description" content="How the DviCalculator Android app handles your business data and Google user data.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="DviCalculator app icon">
+    <div>
+      <h1>Privacy Policy</h1>
+      <p class="tagline">DviCalculator by Dvirukthi · Effective 14 November 2026</p>
+    </div>
+  </header>
+
+  <p>This policy explains how the DviCalculator Android app ("the app"), made by Dvirukthi ("we"), handles
+  information. In short: your business data stays on your device, and if you turn on Google Drive sync it is
+  encrypted before it is stored in <em>your own</em> Google Drive. We do not run servers that receive your data,
+  and we do not sell, share or use your data for advertising.</p>
+
+  <h2>1. Data the app stores on your device</h2>
+  <p>To do its job, the app stores the information you enter in a database on your device, including:</p>
+  <ul>
+    <li>your business details (name, address, phone, email, GSTIN);</li>
+    <li>customers, suppliers, products, prices and price history;</li>
+    <li>invoices, payments, returns, stock, expenses and daily closing records;</li>
+    <li>staff names and roles. Staff PINs are stored only as salted PBKDF2 hashes, never in plain text;</li>
+    <li>an audit log of changes made in the app.</li>
+  </ul>
+  <p>This data is not sent to us. It leaves your device only in the ways described in sections 2 and 3, each
+  of which you start yourself.</p>
+
+  <h2>2. Files you export or share</h2>
+  <p>When you export data, print, or share an invoice or report (for example through WhatsApp), the app creates
+  the file and hands it to the location or app you choose. What happens next is governed by that app or
+  service. The app does not send these files anywhere by itself.</p>
+
+  <h2>3. Optional Google Drive sync and Google user data</h2>
+  <p>Sync is off until you connect a Google account. When you connect one:</p>
+  <ul>
+    <li><strong>Access requested:</strong> only the Google Drive scope <code>drive.file</code> ("see, edit, create
+      and delete only the specific Google Drive files you use with this app"). The app cannot see or change
+      any other files in your Drive, and it does not request access to Gmail, contacts or other Google data.</li>
+    <li><strong>What is read:</strong> the email address of the connected Google account, so the app can show
+      which account sync uses. It is stored only on your device and is not included in synced data.</li>
+    <li><strong>What is stored in your Drive:</strong> a folder named <em>DviCalculator Sync</em> containing
+      encrypted copies of your business data and changes, plus a small settings file without business data or
+      keys.</li>
+    <li><strong>Encryption:</strong> data is encrypted on your device with AES-256-GCM, using a key derived from
+      a sync passphrase you choose (PBKDF2-HMAC-SHA256). The passphrase is never uploaded, and the key is kept
+      only in your device's Android Keystore-protected storage. Neither Google nor we can read the synced data.</li>
+    <li><strong>How it is used:</strong> only to keep your own devices up to date and to let you restore your
+      data. Google user data is not transferred to us or to anyone else, not used for advertising, and not
+      used to train AI or machine-learning models.</li>
+  </ul>
+  <p>DviCalculator's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>No advertising, analytics, tracking or crash-reporting services are built into the app.</li>
+    <li>No account with Dvirukthi is needed, and we do not operate a server that collects your data.</li>
+    <li>We do not sell or rent any data.</li>
+  </ul>
+
+  <h2>5. Device permissions</h2>
+  <p>The app uses internet and network-state access only for Google sign-in and Drive sync, and to sync when a
+  connection is available. It does not request storage, contacts, location, camera or microphone
+  permissions; it opens or saves files only through the system file picker when you choose a file.</p>
+
+  <h2>6. Keeping and deleting your data</h2>
+  <ul>
+    <li><strong>On your device:</strong> uninstalling the app or clearing its storage deletes its local data.</li>
+    <li><strong>In Google Drive:</strong> use <em>Disconnect</em> on the app's Sync screen to revoke access and
+      remove the sync key from the device. You can delete the <em>DviCalculator Sync</em> folder from your Drive at
+      any time, and you can review or remove the app's access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>Synced data is encrypted end-to-end as described above. If you lose your sync passphrase, cloud copies cannot
+  be decrypted by anyone, including us; the data on your devices is not affected.</p>
+
+  <h2>8. Children</h2>
+  <p>The app is a business tool and is not directed at children under 13.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:dvirukthi@gmail.com">dvirukthi@gmail.com</a></p>
+
+  <footer><a href="index.html">DviCalculator home</a> · © 2026 Dvirukthi</footer>
+</main>
+</body>
+</html>
